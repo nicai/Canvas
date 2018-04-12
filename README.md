@@ -1,2 +1,2 @@
 # Canvas
-A Java Canvas drawing program that can paint a line and rectangle or fill the bucket as user's request.
+A Java console canvas drawing program that paints lines, rectangles or fills buckets as user's requests.
