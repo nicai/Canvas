@@ -7,6 +7,11 @@ public class BucketFillCommand extends Command {
 	public static final int BUCKET_FILL_COMMAND_PARAMS_LENGTH = 3;
 	
 	public boolean run(String[] params) {
+        if (canvas == null) {
+            System.out.println("A canvas is required for drawing");
+            return false;
+        }
+        
 		if (!checkParams(params)) {
 			return false;
 		}

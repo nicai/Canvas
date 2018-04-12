@@ -7,10 +7,15 @@ public class LineCommand extends Command {
 	public static final int LINE_COMMAND_PARAMS_LENGTH = 4;
 	
 	public boolean run(String[] params) {
+        if (canvas == null) {
+            System.out.println("A canvas is required for drawing");
+            return false;
+        }
+        
 		if (!checkParams(params)) {
 			return false;
 		}
-		
+        
 		int p1_x = Integer.parseInt(params[0]);
 		int p1_y = Integer.parseInt(params[1]);
 		int p2_x = Integer.parseInt(params[2]);
