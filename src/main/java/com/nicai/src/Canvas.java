@@ -16,7 +16,7 @@ public class Canvas {
 	public Canvas(int width, int height) {
 		this.width = width;
 		this.height = height + 2;
-		shapes = new ArrayList<>();
+		shapes = new ArrayList<Shape>();
 		canvasMatrix = new byte[this.height][this.width];
 	}
 	
